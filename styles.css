@@ -1,0 +1,44 @@
+* {
+    border: 1px solid red;
+}
+
+header {
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.featured-looks .featured-look {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    header {
+        height: 400px
+    }
+
+    header .header-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    header .content {
+        grid-column: 2/3;
+    }
+
+    .featured-looks {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        height: 500px;
+    }
+}
