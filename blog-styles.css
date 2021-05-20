@@ -1,0 +1,40 @@
+* {
+    border: 1px solid orange;
+}
+
+article:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+article .blog-image {
+    min-height: 330px;
+}
+
+article .blog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    margin: auto;
+    text-align: center;
+}
+
+article h2 {
+    margin-bottom: 1.5rem;
+}
+
+article p {
+    margin-bottom: 1rem;
+}
+
+article button {
+    width: fit-content;
+    margin: auto;
+}
+
+@media(min-width: 768px) {
+    article {
+        display: grid;
+        grid-template-columns: 350px 1fr;
+    }
+}

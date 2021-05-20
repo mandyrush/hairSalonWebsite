@@ -82,6 +82,10 @@ select {
   padding-right: 1rem;
 }
 
+header.interior-header {
+  text-align: center;
+}
+
 main {
   padding-top: 2rem;
   padding-bottom: 3rem;
