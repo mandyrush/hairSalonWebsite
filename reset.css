@@ -82,15 +82,27 @@ select {
   padding-right: 1rem;
 }
 
+main {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+/*************** 
+Links 
+***************/
+a {
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   .container {
-    width: 700px;
+    max-width: 700px;
     margin: auto;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    width: 900px;
+    max-width: 900px;
   }
 }

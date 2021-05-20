@@ -8,12 +8,7 @@ header {
     align-items: center;
 }
 
-main {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-}
-
-.featured-looks .featured-look {
+.featured-look {
     text-align: center;
 }
 
@@ -22,7 +17,7 @@ main {
         height: 400px
     }
 
-    header .header-container {
+    header .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -31,7 +26,7 @@ main {
         grid-column: 2/3;
     }
 
-    .featured-looks {
+    main .container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
