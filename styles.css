@@ -1,34 +1,68 @@
-* {
-    border: 1px solid red;
+header {
+    background-color: #000;
+    color: #fff;
 }
 
-header {
-    height: 300px;
+header h2 {
+    color: #7acfdf;
+}
+
+header .background {
+    background: url('./images/billboard_bkgd.jpg') no-repeat center center;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+}
+
+header .content {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #393e46;
+    padding: 2rem;
 }
 
 .featured-look {
     text-align: center;
+    border: 5px solid #7acfdf;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.featured-img {
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
     header {
-        height: 400px
+        display: flex;
+        align-items: center;
+        height: 400px;
+        position: relative;
+    }
+
+    header .background {
+        position: absolute;
+        width: 50%;
+        height: 100%;
     }
 
     header .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        height: 100%;
     }
     
     header .content {
         grid-column: 2/3;
+        height: 100%;
+        clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%);
     }
 
     main .container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
     }
 }
 

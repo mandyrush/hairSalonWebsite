@@ -1,4 +1,6 @@
 footer {
+    background-color: #393e46;
+    color: #fff;
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
@@ -8,5 +10,6 @@ footer {
     footer .container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 }

@@ -1,7 +1,3 @@
-* {
-    border: 1px solid orange;
-}
-
 article:not(:last-child) {
     margin-bottom: 1rem;
 }
