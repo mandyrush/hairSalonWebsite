@@ -1,9 +1,9 @@
-article:not(:last-child) {
-    margin-bottom: 1rem;
+article {
+    background: linear-gradient(to bottom, rgba(82, 115, 77, 0.5), #fff);
 }
 
-article .blog-image {
-    min-height: 330px;
+article:not(:last-child) {
+    margin-bottom: 2rem;
 }
 
 article .blog-content {

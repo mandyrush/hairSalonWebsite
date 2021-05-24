@@ -1,7 +1,11 @@
-header,
 main {
     max-width: 560px;
     margin: auto;
+}
+
+main .header-img {
+    margin-bottom: 1rem;
+    filter: grayscale(40%);
 }
 
 main p {

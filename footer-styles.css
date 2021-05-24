@@ -1,9 +1,16 @@
 footer {
-    background-color: #393e46;
+    background-color: #1A1A1A;
     color: #fff;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    margin-bottom: 2rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer .social-links {
+    text-align: center;
 }
 
 @media(min-width: 768px) {
@@ -11,5 +18,13 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    footer p {
+        margin-bottom: 0;
+    }
+
+    footer .social-links {
+        text-align: left;
     }
 }

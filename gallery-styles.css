@@ -1,5 +1,5 @@
-.gallery .gallery-image {
-    height: 275px;
+.gallery .gallery-image img {
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -9,6 +9,10 @@
         grid-template-rows: repeat(5, 1fr);
         grid-column-gap: 1rem;
         grid-row-gap: 1rem;
+    }
+
+    .gallery .gallery-image img {
+        margin-bottom: 0;
     }
 }
 
