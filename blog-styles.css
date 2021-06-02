@@ -1,0 +1,36 @@
+article {
+    background: linear-gradient(to bottom, rgba(82, 115, 77, 0.5), #fff);
+}
+
+article:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+article .blog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    margin: auto;
+    text-align: center;
+}
+
+article h2 {
+    margin-bottom: 1.5rem;
+}
+
+article p {
+    margin-bottom: 1rem;
+}
+
+article button {
+    width: fit-content;
+    margin: auto;
+}
+
+@media(min-width: 768px) {
+    article {
+        display: grid;
+        grid-template-columns: 350px 1fr;
+    }
+}

@@ -1,0 +1,36 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 5px solid #73628A;
+}
+
+nav a {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+nav a:hover,
+nav a:active,
+nav a:focus {
+    color: #52734d;
+}
+
+nav h1 {
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 280px;
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        width: 500px;
+    }
+}

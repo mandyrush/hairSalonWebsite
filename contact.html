@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hair Salon Checkpoint</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./nav-styles.css">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./contact-styles.css">
     <link rel="stylesheet" href="./footer-styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
@@ -38,48 +38,41 @@
                 </li>
             </ul>
         </nav>
-        <header>
+        <header class="interior-header">
+            <h2>Contact</h2>
             <div class="background"></div>
-            <section class="container">
-                <div class="content">
-                    <h2>Lavender & Sage</h2>
-                    <p>Consectetur adipisicing elit. Accusamus veniam, atque rem placeat labore quae impedit modi quasi. Optio est quos tenetur nemo excepturi.</p>
-                    <a href="/blog.html" class="btn btn-outline accent fill">Read More</a>
-                </div>
-            </section>
+            <div class="diamond-divider-bottom"></div>
         </header>
         <main>
-            <section class="container">
-                <div class="featured-look">
-                    <div class="featured-img">
-                        <a href="/gallery.html">
-                            <img src="./images/featured_img_colored_hair.jpg" alt="Long curled hair colored light purple">
-                        </a>
+            <div class="container">
+                <form action="results.html" method="GET" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="name" class="visuallyhidden">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name">
                     </div>
-                    <h3>Colors</h3>
-                    <div class="diamond-divider-bottom"></div>
-                </div>
 
-                <div class="featured-look">
-                    <div class="featured-img">
-                        <a href="/gallery.html">
-                            <img src="./images/featured_img_updo.jpg" alt="Updo hairstyle with braids and a bun">
-                        </a>
+                    <div class="form-group">
+                        <label for="address" class="visuallyhidden">Address</label>
+                        <input type="text" id="address" name="address" placeholder="Address">
                     </div>
-                    <h3>Styles</h3>
-                    <div class="diamond-divider-bottom"></div>
-                </div>
 
-                <div class="featured-look">
-                    <div class="featured-img">
-                        <a href="/gallery.html">
-                            <img src="./images/featured_img_long_hair.jpg" alt="Long blonde curled hair">
-                        </a>
+                    <div class="form-group">
+                        <label for="email" class="visuallyhidden">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email">
                     </div>
-                    <h3>Treatments</h3>
-                    <div class="diamond-divider-bottom"></div>
-                </div>
-            </section>
+
+                    <div class="form-group">
+                        <label for="phone" class="visuallyhidden">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="visuallyhidden">Message</label>
+                        <textarea type="textarea" id="message" name="message" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-outline fill">Send</button>
+                </form>
+            </div>
         </main>
         <footer>
             <div class="container">

@@ -1,0 +1,128 @@
+/*************** 
+Colors 
+
+Offwhite: feffde
+Light Green: ddffbc
+Mid Green: 91c788 rgb(145, 199, 136)
+Dark Green: 52734d rgb(82, 115, 77)
+Purple: 73628A rgb(115, 98, 138)
+***************/
+
+/***************
+Fonts 
+
+font-family: 'Raleway', sans-serif;
+***************/
+
+header {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.5);
+    padding: 0;
+}
+
+header h2 {
+    color: #B9B1C5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.15;
+    font-size: 1.5rem;
+}
+
+header .background {
+    background: url('./images/billboard_bkgd.jpg') no-repeat right center;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+}
+
+header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1A1A1A;
+    padding: 2rem;
+}
+
+header .content p {
+    margin-bottom: 1rem;
+}
+
+header .content .btn.btn-outline {
+    margin: 0;
+}
+
+main {
+    background-color: rgba(82, 115, 77, 0.5);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.featured-look {
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+.featured-img {
+    margin-bottom: 1rem;
+}
+
+.diamond-divider-bottom {
+    position: absolute;
+    bottom: -15px;
+    border: 8px double rgba(82, 115, 77, 0.5);
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+}
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        height: 400px;
+        position: relative;
+    }
+
+    header .background {
+        position: absolute;
+        width: 60%;
+        height: 100%;
+    }
+
+    header .container {
+        display: grid;
+        grid-template-columns: 60% 1fr;
+        height: 100%;
+        position: relative;
+    }
+    
+    header .content {
+        grid-column: 2/3;
+        height: 100%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-right:3px solid #B9B1C5;
+    }
+
+    main .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        height: 500px;
+    }
+
+    header h2 {
+        font-size: 3rem;
+    }
+}

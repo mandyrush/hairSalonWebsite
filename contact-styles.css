@@ -1,0 +1,13 @@
+main {
+    max-width: 560px;
+    margin: auto;
+}
+
+form .form-group {
+    margin-bottom: 1rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+}

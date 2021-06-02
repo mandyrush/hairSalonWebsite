@@ -1,0 +1,30 @@
+footer {
+    background-color: #1A1A1A;
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer .social-links {
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer p {
+        margin-bottom: 0;
+    }
+
+    footer .social-links {
+        text-align: left;
+    }
+}
